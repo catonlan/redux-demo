@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {connect} from 'react-redux'
-import {addTodo} from '../../actions/index'
+import {addTodo, addTwo} from '../../actions/index'
 
 
 const AddTodo = ({dispatch}) => {
@@ -15,6 +15,7 @@ const AddTodo = ({dispatch}) => {
                         return
                     }
                     dispatch(addTodo(input.value))
+                    dispatch(addTwo('none', input.value))
                     input.value= ''
                 }}>
                     <input ref={node => (input = node)} />
