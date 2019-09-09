@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import AptOne from './router/AptOne'
+import Api from './components/App'
+
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         >
           Learn React
         </a>
+        <hr/>
+        <Api></Api>
+        {/* <AptOne></AptOne> */}
       </header>
     </div>
   );
